@@ -1,7 +1,7 @@
 # The Frienduino
 The Frienduino is an Arduino clone you can make for a friend once you have any kind of Arduino and some soldering skill.
 The board is easy to make (single sided) and easy to solder (only through hole components).
-It has everything to get started yet cheap and simple because it saves on stuff the novice doesn't need (separate power supply and 3.3V regulator).
+It has everything to get started yet it is cheap and simple because it saves on stuff the novice doesn't need (separate power supply and 3.3V regulator).
 
 IMHO, what made the Arduino so popular is its USB connectivity. This lower the entry barrier to near zero.
 No messing around with programmers, no legacy serial port required.
