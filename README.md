@@ -10,7 +10,7 @@ I guess the reason for this is that, until now, all USB to serial adapters were 
 thus discouraging the novice to build a "true to the spirit" clone on their own.
 
 It may seem odd at first to use a programmable micro controller just as a dumb USB to serial converter, but if you look at the price tag and consider it's the only way to get USB to serial as a through hole part it makes a lot of sense to me.
-And not to me alone. The folks over at UNL Maker Club had a must have had a similar reasoning when they chose the 16F1454 as the USB adapter for [Innovation Board](http://make.unl.edu/innovation-board/) all SMD Arduino clone.
+And not to me alone. The folks over at UNL Maker Club had a must have had a similar reasoning when they chose the 16F1454 as the USB adapter for their [Innovation Board](http://make.unl.edu/innovation-board/) all SMD Arduino clone.
 
 
 ## Design
@@ -27,6 +27,7 @@ Then you have to connect
 * the Frienduino's +5V (pin 2 of the PICs ICSP header) to digital pin 2 of your second Arduino
 * pin 4 (data) of the PICs ICSP header to digital pin 7 of your second Arduino
 * pin 5 (clock) of the PICs ICSP header to digital pin 4 of your second Arduino
+
 Then you have to run `./ardpicprog -p /dev/ttyACM0 --erase --burn --input-hexfile  PIC16F1454_USB2Serial.hex` in Linux, or `ardpicprog.exe -p COM1 --erase --burn --input-hexfile  PIC16F1454_USB2Serial.hex` in Windows in a console in the flashing program's folder (assuming you copied the firmware hex file to this folder, and that the second Arduino is connected to the /dev/ttyACM0 resp. COM1 port). The flashing program will then identify your PIC as a 16F1454, erase it and then burn the new firmware (this will take a while). When the flashing program finishes you're done and can disconnect all jumper cables before you move on to flash the Atmega.
 
 ## Flashing the Atmega
