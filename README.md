@@ -17,7 +17,7 @@ And not to me alone. The folks over at UNL Maker Club must have had a similar re
 The schematic and PCB are a copy of the [Arduino Duemilanove](http://arduino.cc/en/pmwiki.php?n=Main/arduinoBoardDuemilanove) reference design modified to be a single sided layout using the 16F1454 as the USB adapter and striped off the external power supply. Reset button and ICSP header were moved for better accessability and less complicated routing respectively.
 
 ## Making
-For German hackers I have prepared a public [reichelt](http://www.reichelt.de/) shopping cart with all the parts needed [here](https://secure.reichelt.de/index.html?&ACTION=20&AWKID=1013176&PROVID=2084).
+For German hackers I have prepared a public [reichelt](http://www.reichelt.de/) shopping cart with all the parts needed [here](https://secure.reichelt.de/index.html?&ACTION=20&AWKID=1013176&PROVID=2084). It totals to 7.78EUR.
 
 ## Flashing the PIC 16F1454
 The pre-compiled firmware to turn the PIC 16F1454 into a serial adapter can be downloaded from [this](https://github.com/jgeisler0303/PIC16F1454_USB2Serial) repository. To flash the .hex-file to the PIC you can use a second Arduino board plus a 9V battery, a transistor (BC 548), two 4.7k resistors, and some jumper cables using the soft- and firmware from [this](https://github.com/jgeisler0303/ardpicprog) repository. 
