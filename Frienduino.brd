@@ -27,7 +27,7 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="13" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -35,7 +35,7 @@
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="12" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -82,6 +82,7 @@
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="no"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="no"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
@@ -148,7 +149,7 @@
 <text x="64.389" y="43.942" size="1.4224" layer="25" font="fixed" ratio="10" rot="R90">RX 0</text>
 <text x="19.177" y="49.403" size="1.4224" layer="25" font="fixed" ratio="10">TX</text>
 <text x="21.717" y="38.735" size="1.4224" layer="25" font="fixed" ratio="10">RX</text>
-<text x="46.5328" y="31.496" size="2.54" layer="25" font="fixed" ratio="15">Frienduino</text>
+<text x="37.6428" y="39.751" size="2.54" layer="25" font="fixed" ratio="15">Frienduino</text>
 <text x="33.6252" y="4.4318" size="1.4224" layer="25" font="fixed" ratio="10" rot="R90">RST</text>
 <text x="36.0382" y="4.4318" size="1.4224" layer="25" font="fixed" ratio="10" rot="R90">NC</text>
 <text x="30.099" y="43.561" size="1.27" layer="49">R7</text>
@@ -162,9 +163,7 @@
 <text x="45.974" y="27.051" size="1.27" layer="49" rot="R90">R1</text>
 <text x="40.132" y="31.623" size="1.27" layer="49">C2</text>
 <text x="34.671" y="31.623" size="1.27" layer="49">C3</text>
-<text x="67.2556" y="23.6078" size="1.778" layer="25" font="fixed" ratio="15" align="bottom-right">CC BY-SA
-3.0
-J. Geisler</text>
+<text x="66.6206" y="38.2128" size="1.016" layer="25" font="fixed" ratio="15" align="bottom-right">https://github.com/jgeisler0303/Frienduino</text>
 <hole x="66.04" y="35.56" drill="3.2"/>
 <hole x="66.04" y="7.62" drill="3.2"/>
 <hole x="15.24" y="50.8" drill="3.2"/>
@@ -200,6 +199,42 @@ J. Geisler</text>
 <wire x1="69.088" y1="4.826" x2="66.548" y2="2.286" width="1" layer="46"/>
 <wire x1="66.548" y1="2.286" x2="66.548" y2="-0.508" width="1" layer="46"/>
 <wire x1="66.548" y1="-0.508" x2="-0.508" y2="-0.508" width="1" layer="46"/>
+<text x="53.34" y="24.765" size="1.143" layer="21">open hardware</text>
+<polygon width="0.0254" layer="21">
+<vertex x="60.85945625" y="27.65668125" curve="9.500016"/>
+<vertex x="61.3094" y="27.88841875"/>
+<vertex x="62.426615625" y="26.97729375"/>
+<vertex x="63.19270625" y="27.743384375"/>
+<vertex x="62.28158125" y="28.8606" curve="18.999972"/>
+<vertex x="62.6676125" y="29.7925625"/>
+<vertex x="64.10186875" y="29.938290625"/>
+<vertex x="64.10186875" y="31.021709375"/>
+<vertex x="62.6676125" y="31.1674375" curve="18.999972"/>
+<vertex x="62.28158125" y="32.0994"/>
+<vertex x="63.19270625" y="33.216615625"/>
+<vertex x="62.426615625" y="33.98270625"/>
+<vertex x="61.3094" y="33.07158125" curve="18.999972"/>
+<vertex x="60.3774375" y="33.4576125"/>
+<vertex x="60.231709375" y="34.89186875"/>
+<vertex x="59.148290625" y="34.89186875"/>
+<vertex x="59.0025625" y="33.4576125" curve="18.999972"/>
+<vertex x="58.0706" y="33.07158125"/>
+<vertex x="56.953384375" y="33.98270625"/>
+<vertex x="56.18729375" y="33.216615625"/>
+<vertex x="57.09841875" y="32.0994" curve="18.999972"/>
+<vertex x="56.7123875" y="31.1674375"/>
+<vertex x="55.27813125" y="31.021709375"/>
+<vertex x="55.27813125" y="29.938290625"/>
+<vertex x="56.7123875" y="29.7925625" curve="18.999972"/>
+<vertex x="57.09841875" y="28.8606"/>
+<vertex x="56.18729375" y="27.743384375"/>
+<vertex x="56.953384375" y="26.97729375"/>
+<vertex x="58.0706" y="27.88841875" curve="9.500016"/>
+<vertex x="58.52054375" y="27.65668125"/>
+<vertex x="59.158428125" y="29.196675" curve="-67.499923"/>
+<vertex x="58.3009375" y="30.48" curve="-247.499952"/>
+<vertex x="60.221571875" y="29.196675"/>
+</polygon>
 </plain>
 <libraries>
 <library name="atmel">
@@ -1914,7 +1949,14 @@ type 0204, grid 7.5 mm</description>
 <class number="4" name="aref" width="0.4064" drill="0">
 </class>
 </classes>
-<designrules name="default *">
+<designrules name="SeeedStudio_2layer_DRU_no_angle_20140221">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
@@ -1922,26 +1964,28 @@ a wide range of applications. Your particular design
 may have different requirements, so please make the
 necessary adjustments and save your customized
 design rules under a new name.</description>
+<description language="zh">&lt;b&gt;Seeed Studio EAGLE Design Rules&lt;/b&gt;
+</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="8mil"/>
-<param name="mdSmdVia" value="8mil"/>
-<param name="mdSmdSmd" value="8mil"/>
+<param name="mtCopper" value="0.035mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0175mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 1.1mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="0mil"/>
+<param name="mdSmdVia" value="0mil"/>
+<param name="mdSmdSmd" value="0mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="10mil"/>
-<param name="mdDrill" value="6mil"/>
+<param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="12mil"/>
+<param name="msWidth" value="6mil"/>
 <param name="msDrill" value="12mil"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msMicroVia" value="12mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -1956,9 +2000,9 @@ design rules under a new name.</description>
 <param name="rlMaxPadInner" value="20mil"/>
 <param name="rlMinPadBottom" value="10mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="10mil"/>
+<param name="rlMinViaOuter" value="6mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="6mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -1966,16 +2010,16 @@ design rules under a new name.</description>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
-<param name="psFirst" value="-1"/>
+<param name="psFirst" value="0"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinStopFrame" value="2mil"/>
+<param name="mlMaxStopFrame" value="2mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="100mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -1986,7 +2030,7 @@ design rules under a new name.</description>
 <param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
-<param name="checkRestrict" value="1"/>
+<param name="checkRestrict" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -2090,18 +2134,17 @@ design rules under a new name.</description>
 <attribute name="NAME" x="45.8286" y="15.5234" size="1.778" layer="49" ratio="10"/>
 <attribute name="VALUE" x="52.959" y="17.399" size="1.778" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="ICSP" library="pinhead" package="2X03" value="" x="24.13" y="5.08" smashed="yes">
-<attribute name="NAME" x="22.161" y="0.471" size="1.4224" layer="25" ratio="10"/>
-<attribute name="VALUE" x="28.398" y="7.607" size="1.27" layer="27" rot="R270"/>
+<element name="ICSP" library="pinhead" package="2X03" value="ISP" x="24.13" y="5.08" smashed="yes">
+<attribute name="VALUE" x="22.873" y="1.093" size="1.27" layer="27"/>
 </element>
 <element name="R1" library="resistor" package="0204/7" value="10k" x="66.675" y="16.51" smashed="yes" rot="R270">
 <attribute name="VALUE" x="66.167" y="18.1356" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="C1" library="rcl" package="C050-025X075" value="100n" x="50.165" y="26.035" smashed="yes" rot="R90">
-<attribute name="VALUE" x="53.086" y="23.876" size="1.27" layer="27" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="51.689" y="31.496" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C2" library="rcl" package="C050-024X044" value="22p" x="44.45" y="31.75" smashed="yes" rot="R270">
-<attribute name="VALUE" x="43.942" y="34.798" size="1.27" layer="27" ratio="10"/>
+<attribute name="VALUE" x="44.577" y="34.798" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="C3" library="rcl" package="C050-024X044" value="22p" x="41.91" y="31.75" smashed="yes" rot="R270">
 <attribute name="VALUE" x="40.132" y="34.798" size="1.27" layer="27" ratio="10"/>
@@ -2116,7 +2159,6 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="49.53" y="-0.635" size="1.27" layer="27"/>
 </element>
 <element name="S1" library="switch-omron" package="B3F-10XX" value="" x="6.35" y="7.62" smashed="yes">
-<attribute name="NAME" x="7.6212" y="8.4892" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="3.302" y="2.54" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="R7" library="resistor" package="0204/7" value="1k" x="30.1625" y="44.7675" smashed="yes" rot="R90">
@@ -2149,7 +2191,7 @@ design rules under a new name.</description>
 </element>
 <element name="Q2" library="crystal" package="HC49/S" value="16MHz" x="43.18" y="25.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="42.117" y="22.701" size="1.27" layer="49" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="46.228" y="22.479" size="1.27" layer="27" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="40.513" y="29.464" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="X4" library="SmartPrj" package="PN61729" value="" x="3.81" y="38.1" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-5.08" y="30.48" size="1.27" layer="27"/>
@@ -2164,7 +2206,7 @@ design rules under a new name.</description>
 </element>
 <element name="F1" library="rcl" package="0204/5" value="500mA" x="3.81" y="46.355" smashed="yes">
 <attribute name="NAME" x="2.921" y="45.847" size="1.27" layer="49"/>
-<attribute name="VALUE" x="1.143" y="47.117" size="1.27" layer="27"/>
+<attribute name="VALUE" x="1.143" y="43.942" size="1.27" layer="27"/>
 </element>
 <element name="C10" library="rcl" package="C050-025X075" value="100n" x="9.525" y="22.86" smashed="yes" rot="R135">
 <attribute name="VALUE" x="10.233296875" y="19.923590625" size="1.27" layer="27" rot="R135"/>
@@ -2176,21 +2218,22 @@ design rules under a new name.</description>
 <attribute name="NAME" x="19.70414375" y="22.50716875" size="1.27" layer="49" rot="R225"/>
 <attribute name="VALUE" x="24.53916875" y="24.3430625" size="1.27" layer="27" rot="R225"/>
 </element>
-<element name="IC2" library="microchip" package="DIL14" value="PIC16F1454" x="16.51" y="31.115" rot="R45">
+<element name="IC2" library="microchip" package="DIL14" value="PIC16F1454" x="16.51" y="31.115" smashed="yes" rot="R45">
 <attribute name="OC_NEWARK" value="54K2829" x="16.51" y="31.115" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="MPN" value="PIC16F676-I/P" x="16.51" y="31.115" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="MF" value="MICROCHIP" x="16.51" y="31.115" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="OC_FARNELL" value="9760512" x="16.51" y="31.115" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="VALUE" x="12.199475" y="25.90645" size="1.27" layer="27" ratio="10" rot="R45"/>
 </element>
 <element name="C4" library="rcl" package="C050-025X075" value="470n" x="12.7" y="38.735" smashed="yes" rot="R270">
 <attribute name="VALUE" x="9.906" y="42.164" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="SV1" library="con-lstb" package="MA05-1" value="" x="4.445" y="21.59" smashed="yes" rot="R90">
+<element name="SV1" library="con-lstb" package="MA05-1" value="PIC ICSP" x="4.445" y="21.59" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="4.445" y="21.59" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="4.445" y="21.59" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="4.445" y="21.59" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="4.445" y="21.59" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="7.366" y="19.05" size="1.27" layer="27" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="2.286" y="16.51" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="D1" library="diode" package="DO35-7" value="BAT 47" x="20.955003125" y="26.46860625" rot="R225"/>
 </elements>
@@ -2262,6 +2305,7 @@ design rules under a new name.</description>
 <wire x1="12.7" y1="48.26" x2="15.875" y2="48.26" width="0.4064" layer="16"/>
 <wire x1="12.219075" y1="44.930921875" x2="12.219075" y2="47.779075" width="0.4064" layer="16"/>
 <wire x1="12.219075" y1="47.779075" x2="12.7" y2="48.26" width="0.4064" layer="16"/>
+<wire x1="21.59" y1="10.795" x2="22.225" y2="12.065" width="1.4224" layer="1"/>
 </signal>
 <signal name="GND" class="2">
 <contactref element="ICSP" pad="6"/>
@@ -2364,6 +2408,28 @@ design rules under a new name.</description>
 <wire x1="8.89" y1="50.165" x2="7.62" y2="51.435" width="0.4064" layer="16"/>
 <wire x1="27.305" y1="33.02" x2="19.05" y2="41.275" width="0.4064" layer="16"/>
 <wire x1="19.05" y1="41.275" x2="12.7" y2="41.275" width="0.4064" layer="16"/>
+<polygon width="0.4064" layer="16" isolate="0.4064">
+<vertex x="0" y="53.34"/>
+<vertex x="0" y="0"/>
+<vertex x="66.04" y="0"/>
+<vertex x="66.04" y="2.54"/>
+<vertex x="68.58" y="5.08"/>
+<vertex x="68.58" y="38.1"/>
+<vertex x="66.04" y="40.64"/>
+<vertex x="66.04" y="51.435"/>
+<vertex x="64.135" y="53.34"/>
+</polygon>
+<polygon width="0.4064" layer="1" isolate="0.4064">
+<vertex x="0" y="0"/>
+<vertex x="0" y="53.34"/>
+<vertex x="64.135" y="53.34"/>
+<vertex x="66.04" y="51.435"/>
+<vertex x="66.04" y="40.64"/>
+<vertex x="68.58" y="38.1"/>
+<vertex x="68.58" y="5.08"/>
+<vertex x="66.04" y="2.54"/>
+<vertex x="66.04" y="0"/>
+</polygon>
 </signal>
 <signal name="N$6">
 <contactref element="IC1" pad="9"/>
@@ -2791,10 +2857,4 @@ design rules under a new name.</description>
 </signals>
 </board>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
