@@ -21,6 +21,8 @@ Linux users should have no problem. The driver should be automatically installed
 The schematic and PCB are a copy of the [Arduino Duemilanove](http://arduino.cc/en/pmwiki.php?n=Main/arduinoBoardDuemilanove) reference design modified to be a single sided layout using the 16F1454 as the USB adapter and striped off the external power supply. Reset button and ICSP header were moved for better accessability and less complicated routing respectively.
 
 ## Making
+If you intend to have the Frienduino PCB made, there now is a ready to use gerber file in the repository. If you want the PCBs made by [http://www.seeedstudio.com](http://www.seeedstudio.com) you can even uses this [ready to order project](http://www.seeedstudio.com/service/WmUiIGK1).
+
 For German hackers I have prepared a public [reichelt](http://www.reichelt.de/) shopping cart with all the parts needed [here](https://secure.reichelt.de/index.html?&ACTION=20&AWKID=1013176&PROVID=2084). It totals to 7.78EUR.
 
 ## Flashing the PIC 16F1454
